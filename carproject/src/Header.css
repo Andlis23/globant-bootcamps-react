@@ -1,0 +1,10 @@
+.Header h1{
+    text-align: center;
+    padding: 10px;
+    margin: 20px 30px;
+}
+
+.Header p{
+    padding: 10px;
+    margin: 10px 20px;
+}

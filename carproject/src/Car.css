@@ -1,0 +1,14 @@
+.car ul{
+    list-style-type: none;
+    align-content: center;
+    padding-right: 40px;
+}
+
+.car img{
+    width:  200px;
+    height: 120px;
+}
+
+.car li{
+    font-weight: bold;
+}
