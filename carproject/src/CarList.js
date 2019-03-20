@@ -1,6 +1,6 @@
-import React  from 'react';
-import Car    from './Car';
-import './CarList.css';
+import React   from 'react';
+import CarInfo from './CarInfo';
+import './Style/CarList.css';
 import honda  from './Img/honda.jpg';
 import mazda  from './Img/mazda.jpg';
 import nissan from './Img/nissan.jpg';
@@ -13,7 +13,8 @@ const list = [
      brand: 'Honda', 
      model: 'Civic',
      year:  '2003',
-     motor: '120 HP'  },
+     motor: '120 HP',
+     amounts: 20  },
 
     {id: 2,
      img:    subaru, 
@@ -21,7 +22,8 @@ const list = [
      brand: 'Subaru', 
      model: 'Impreza',
      year:  '2006',
-     motor: '118 HP' },
+     motor: '118 HP',
+     amounts: 18 },
 
      {id: 3, 
       img:    mazda,
@@ -29,7 +31,8 @@ const list = [
       brand: 'Mazda',
       model: '6',
       year:  '2008',
-      motor: '150 HP' },
+      motor: '150 HP',
+      amounts: 20 },
     
     {id: 4, 
      img:    nissan, 
@@ -37,25 +40,27 @@ const list = [
      brand: 'Nissan',
      model: '370Z',
      year:  '2007',
-     motor: '360HP'}
+     motor: '360HP',
+     amounts: 15 }
 ];
 
 const carList = () => {
   const cars = list.map( car =>
-    <Car 
-      key={car.id}
-      id={car.id}
-      img={car.img}
-      brand={car.brand}
-      model={car.model}
-      year={car.year}
-      motor={car.motor} />
+    <CarInfo
+      key    ={car.id}
+      id     ={car.id}
+      img    ={car.img}
+      brand  ={car.brand}
+      model  ={car.model}
+      year   ={car.year}
+      motor  ={car.motor}
+      amounts={car.amounts} />
     );
 
-  return (
-    <div className= "flex-container">
-      {cars}
-    </div>
+    return (
+      <div className= "flex-container">
+        {cars}
+      </div>
   )
 }
 

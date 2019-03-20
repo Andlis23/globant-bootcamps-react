@@ -1,7 +1,9 @@
 .car ul{
     list-style-type: none;
     align-content: center;
-    padding-right: 40px;
+    /* padding-right: 20px; */
+    padding: 20px;
+    width: auto;
 }
 
 .car img{
@@ -18,4 +20,5 @@
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
+    margin: 10px;
 }

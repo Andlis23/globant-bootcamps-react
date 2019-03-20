@@ -1,36 +1,36 @@
 import React from 'react';
-import './Button.css';
+import CarActions from './CarActions';
+import './CarInfo';
 
 class Button extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            counter: 0
+            amounts: this.props.amount
         };
 
-        this.increment = this.increment.bind(this);
-        this.decrement = this.decrement.bind(this);
+        this.buyButton = this.buyButton.bind(this);
+        this.sellButton = this.sellButton.bind(this);
     };
 
-    increment() {
+    buyButton() {
         this.setState(state => ({
-            counter: state.counter + 1,
+            amounts: state.amounts + 1,
         }));
     }
 
-    decrement() {
-        this.state.counter >= 1 && this.setState(state => ({
-            counter: state.counter - 1,
+    sellButton() {
+        this.state.amounts >= 1 && this.setState(state => ({
+            amounts: state.amounts - 1,
         }));
     }
 
     render() {
         return (
-            <div className="Button">
-              <label>You have {this.state.counter} cars</label><br/>
-              <button onClick = {this.increment.bind(this)}> + </button> 
-              <button onClick = {this.decrement.bind(this)}> - </button>
-            </div>
+            <CarActions
+             amounts    = {this.state.amounts}
+             buyButton  = {this.buyButton}
+             sellButton = {this.sellButton} />
         );
     }
 }

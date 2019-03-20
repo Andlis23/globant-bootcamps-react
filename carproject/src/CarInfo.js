@@ -1,16 +1,17 @@
 import React from 'react';
-import './Car.css';
+import './Style/CarInfo.css';
 import Button from './Button';
 
-const Car = ({id, img, alt, brand, model, year, motor}) => (
+const CarInfo = ({id, img, alt, brand, model, year, motor, amounts}) => (
     <div className="car">
         <p>{brand} {model}</p>
         <ul>
             <li><img src={img} alt={alt} /></li>
             <li>Year: {year}</li>
             <li>Motor: {motor}</li>
-            <li><Button /></li>
+            {/* <li>Units availables: {amounts}</li> */}
+            <li><Button amount = {amounts}/></li>
         </ul>
     </div>
 ); 
-export default Car; 
+export default CarInfo; 
