@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import './Style/CarActions.css';
+import './Style/VehicleActions.css';
 
-const CarActions = ({amounts, buyButton, sellButton}) => (
+const VehicleActions = ({amounts, buyButton, sellButton}) => (
     <>
       <label>Amount of cars {amounts} availables</label><br/>
       <div className="Button">
@@ -11,4 +11,4 @@ const CarActions = ({amounts, buyButton, sellButton}) => (
     </>
 );
 
-export default CarActions;
+export default VehicleActions;

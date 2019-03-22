@@ -2,14 +2,15 @@ import React from 'react';
 import './Style/App.css';
 import Header  from './Header';
 import CarList from './CarList';
-import Footer  from './Footer';
-
+import Form from './Form'
+import Footer from './Footer';
 
 const App = () => (
   <div className="App">
     <Header />
-    <CarList />
+    <Form />
     <Footer />
+    {/* <CarList /> */}
   </div>
 )
 

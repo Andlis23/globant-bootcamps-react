@@ -1,16 +1,10 @@
-import React from 'react';
+import React from 'react'
 import './Style/Footer.css'
 
 const Footer = () => (
-    <div className = "Footer">
-        <div className="Contact">
-            <a href='#'>About</a><br/><br/> 
-            <a href='#'>Contact us</a>
-        </div>
-        <div className="Copy">
-            <p>© 2019</p>
-        </div>
-    </div>
+  <div className = "Footer">
+    <p>© 2019</p>
+  </div>
 )
 
 export default Footer;

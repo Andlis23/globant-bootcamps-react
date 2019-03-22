@@ -1,0 +1,11 @@
+.Contact {
+    font-family: 'Roboto Slab', serif;
+    border-radius: 10px; 
+    padding: 50px;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.Contact h1{
+    margin: 10px;
+}

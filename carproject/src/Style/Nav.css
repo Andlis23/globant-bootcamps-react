@@ -1,0 +1,35 @@
+.Menu ul{
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    background-color: #585656;   
+}
+
+.Menu li{
+    list-style-type: none;
+    float: right;
+    width: auto;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 20px;
+}
+
+.Menu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+.Menu li a:hover{
+    background-color: #ec3939;
+}
+
+.Menu .LogoC{
+    font-family: 'Lobster', cursive;
+    margin: 10px;
+    float: left;
+    font-size: 40px;
+    padding-top: 5px;
+    color: white;
+}  

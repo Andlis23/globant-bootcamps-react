@@ -1,14 +1,4 @@
-.Footer{
-    padding: 10px;
-    margin: 20px 50px;
-    line-height: 20px;
-    background-color:#e2dede;
-    border-radius: 10px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.Footer .Copy{
+.Footer {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }

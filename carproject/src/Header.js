@@ -1,11 +1,10 @@
-import React from 'react';
-import './Style/Header.css';
+import React, { Fragment } from 'react';
+import Logo from './Img/Principal.jpg';
 
 const Header = () => (
-    <div className = "Header">
-        <h1>Welcome to our sales car</h1>
-        <p>On this page you can see our available cars for sale</p>
-    </div>
-)
+      <div className = "Header">
+        <img src={Logo} alt="Imagen principal" style={{width: '100%'}}/>
+      </div>
+);
 
 export default Header;

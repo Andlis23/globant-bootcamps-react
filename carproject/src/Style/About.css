@@ -1,0 +1,17 @@
+.about p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+
+.about{
+    margin-top: 100px;
+}
+
+.about img {
+    float: right;
+
+}
