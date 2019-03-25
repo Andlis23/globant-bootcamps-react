@@ -1,0 +1,31 @@
+.vehicle img{
+    width:  220px;
+    height: 150px; 
+    padding: 0px  20px;
+}
+
+.vehicle button {
+    border-radius: 4px;
+    background-color: #585656;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px; 
+    border: none;
+    line-height: 20px;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.vehicle button:hover{
+    background-color: #ec3939;
+}
+
+.vehicle p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px
+}
+
+

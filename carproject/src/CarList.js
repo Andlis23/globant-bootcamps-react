@@ -1,13 +1,13 @@
-import React   from 'react';
-import VehicleInfo from './VehicleInfo';
-import './Style/CarList.css';
+import React, {Fragment}  from 'react';
 import { Link } from 'react-router-dom';
-import api from './Cars.json.js';
+import api         from './Cars.json.js';
+import Vehicle     from './Vehicle';
+
+import './Style/CarList.css';
 
 const carList = ({match}) => {
   const cars = api.cars.map( car => (
-    <Link key={car.id} to={{pathname: `/Vehicles/${car.id}`}}>
-    <VehicleInfo
+    <Vehicle
       key    ={car.id}
       id     ={car.id}
       img    ={car.img}
@@ -16,12 +16,17 @@ const carList = ({match}) => {
       year   ={car.year}
       motor  ={car.motor}
       amounts={car.amounts} />
-    </Link>
     ));
     return (
-      <div className= "flex-container">
-        {cars}
-      </div>
+      <>
+       <div className="paragraph">
+        <p>This is our car list for you</p>
+        </div>
+        <div className= "flex-container">
+          {cars}
+        </div>
+      </>
   )
 }
+
 export default carList;

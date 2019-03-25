@@ -4,7 +4,7 @@ import nissan from './Img/nissan.jpg';
 import subaru from './Img/subaru.jpg';
 
 export default {
-    cars: [
+ cars: [
         {id: 0, 
         img:    honda,
         alt:   'honda',
@@ -40,5 +40,5 @@ export default {
         year:  '2007',
         motor: '360HP',
         amounts: 15 }
-    ]
+ ]
 }
