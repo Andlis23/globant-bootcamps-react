@@ -1,32 +1,26 @@
 import React          from 'react';
 import VehicleActions from './VehicleActions';
-import Pagina         from './Pagina';
-import './VehicleInfo';
-import app from './Cars.json.js'
+import VehicleInfo    from './VehicleInfo';
+import './Style/Vehicle.css'
 
 class Vehicle extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            amounts: this.props.amount,
-            cars: ''   
+            amounts: this.props.amounts,
+            count: 0
         }
 
         this.buyButton  = this.buyButton.bind(this);
         this.sellButton = this.sellButton.bind(this);
     };
 
-    componentDidMount(){
-        const { carId } = this.props.match.params;
-        const cars = cars[carId];
-    }
-
-
     buyButton() {
         this.setState(state => ({
             amounts: state.amounts + 1,
         }));
     }
+
 
     sellButton() {
         this.state.amounts >= 1 && this.setState(state => ({
@@ -35,36 +29,23 @@ class Vehicle extends React.Component{
     }
 
     render() {
-        const cars = this.state;
-        const { brand, model, year, motor } = cars;
         return (
-          <div>
-            <Pagina
-             brand={brand}
-             model={model}
-             year ={year}
-             motor={motor}
+         <div className="vehicle">
+            <VehicleInfo 
+              key={this.props.id}
+              brand={this.props.brand}
+              model= {this.props.model}
+              img={this.props.img}
+              year={this.props.year}
+              motor= {this.props.motor}
             />
             <VehicleActions
              amounts    = {this.state.amounts}
              buyButton  = {this.buyButton}
-             sellButton = {this.sellButton} />
-           </div>
+             sellButton = {this.sellButton} 
+             /> 
+         </div> 
         );
     }
 }
 export default Vehicle;
-
-/*
-const { carID } = props.match.params // aqui vienen los parametros
-const car = FindCarById(CarId)
-
-
-function FindBookById(carId) {
-
-  carId = Number(carId)
-
-  return api.car.find(car => car.id === carId) || null
-}
-
-*/

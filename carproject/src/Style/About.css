@@ -1,17 +1,22 @@
-.about p{
+.about{
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    margin: 50px;
-    float: left;
-    line-height: 50px;
-    text-align: center;
 }
 
-.about{
-    margin-top: 100px;
+.about p{
+    font-size: 20px;
+    margin-left: 120px;
+    float: left;
+    line-height: 50px;
+    text-align: justify;
 }
 
 .about img {
     float: right;
+    width: 40px;
+    height: auto;
+}
 
+.about h1{
+    margin-left: 80px;
+    margin-top: 50px;
 }

@@ -7,7 +7,6 @@ import Contact from './Rutas/Contact';
 import CarList from './CarList';
 import Home    from './Rutas/Home';
 import Nav from './Nav';
-import Vehicle from './Vehicle';
 
 ReactDOM.render( (
     <Router>
@@ -15,10 +14,7 @@ ReactDOM.render( (
           <Nav />
           <switch>
             <Route path="/" component={Home} exact />
-            {/* Lista de los carros */}
             <Route path="/Vehicles" component={CarList} exact />  
-            {/* Detalle de los carros */}
-            <Route path="Vehicles/:carId" component={Vehicle} exact/>
             <Route path="/About" component={About} exact />
             <Route path="/Contact" component={Contact} exact />
           </switch>

@@ -30,13 +30,17 @@ input[type=submit]:hover{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    /* margin: 20px 400px; */
-    margin: auto 200px;
+    margin: auto 400px;
     font-family: 'Roboto Slab', serif;
 }
 
-p{
-    margin: 20px;
+.pform p{
+    margin: 40px;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
+}
+
+.error {
+    color: #ec3939;
+    font-size: 15px;
 }
