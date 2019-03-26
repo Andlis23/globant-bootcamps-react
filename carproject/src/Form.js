@@ -26,8 +26,12 @@ class Form extends React.Component {
     };
 
     validate = () => {
-        let userNameError= " ";
-        let moneyError= " ";
+        let userNameError= "";
+        let moneyError= "";
+
+        if(!this.state.userName) {
+            userNameError= " Name cannot be blank";
+        }
 
         if(!this.state.money) {
             moneyError = " Money cannot be blank";
@@ -58,7 +62,7 @@ class Form extends React.Component {
         return (
          <>
          <div className="pform">
-          <p>Please, complete the form below</p>
+          <p>Please, complete the form below to access our car list</p>
          </div>
            <div className="Form"> 
              <form onSubmit={this.handleSubmit}>

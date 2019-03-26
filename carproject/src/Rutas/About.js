@@ -3,13 +3,14 @@ import '../Style/About.css'
 import buy from '../Img/buy.jpg'
 
 const About = () => (
-    <div>
+  <div>
     <div className="about">
-      <p>We are a company with a great career in sales of cars.<br/> 
-      Our mission is to be within the highest rates of <br/> demand in the car market </p>
+      <h1>About our company</h1>
+      <p>We are a company with a great career in sales of cars. 
+      Our mission is to be<br/> within the highest rates of demand in the car market </p>
     </div>
     <img src= {buy} />
-    </div>
+  </div>
 )
 
 export default About;
